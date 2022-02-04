@@ -46,7 +46,7 @@ for word in word_list_one:
 #adds words from word_list_two which have letter_three after letter_two to word_list_two
 for word in word_list_two:
     word_after_first = word[word.find(letter_one)+1:]
-    word_after_second = word_after_first[word_after_first.find(letter_two):]
+    word_after_second = word_after_first[word_after_first.find(letter_two)+1:]
     if letter_three in word_after_second:
         final_word_list.append(word)
 
